@@ -19,7 +19,8 @@
 | **Week 9 (Session 9)** | Abstraction & Interfaces | `feature/session_9` | 03-10-2026 | 5 | 5 | 10 |
 | **Week 10 (Session 10)** | Data Structures & Core Practice | `feature/session_10` | 14-11-2026 | 10 | 5 | 15 |
 | **Week 11 (Session 11)** | Searching & Sorting Algorithms | `feature/session_11` | 14-11-2026 | 10 | 5 | 15 |
-| **Total** | | | | **64** | **45** | **109** |
+| **Week 12 (Session 12)** | Singly Linked List & Linked Stack | `feature/session_12` | 14-11-2026 | 0 | 5 | 5 |
+| **Total** | | | | **64** | **50** | **114** |
 
 ---
 
@@ -269,20 +270,35 @@
 
 ---
 
+### Week 12: Session 12 — Singly Linked List & Linked Stack
+* **Date**: 14-11-2026 (16:40 IST)
+* **Branch**: [`feature/session_12`](https://github.com/singhtulsi19/Step_semester_3/tree/feature/session_12)
+* **Directory**: `src/main/java/linked_list/assignment_problems/`
+* **Concepts**: Custom Node data structures (`data`, `next`), dynamic memory allocation without `java.util.LinkedList`, head insertion, tail insertion, linear node traversal, search with position and duplicate count, node deletion by key, stack implementation on a linked chain (`push`, `pop`, `peek`, `isEmpty`).
+
+**Assignment Problems:**
+1. `BusRouteStops.java` (`// Problem no. 1`) — Custom `Node` linked list builder from an array of bus stop names, printing arrow-formatted chain (`a -> b -> null`), total stop count, and first/last stops.
+2. `LateComersInLine.java` (`// Problem no. 2`) — Dynamic queue modeling using `addFirst(head, name)` for VIPs and `addLast(head, name)` for late comers, returning modified linked chain.
+3. `BookCopyFinder.java` (`// Problem no. 3`) — Single-pass search tracking the 1-based index of the first occurrence and total duplicate count of a book ID on a returns trolley.
+4. `CancelBooking.java` (`// Problem no. 4`) — First-occurrence node removal by booking key, handling head-deletion, internal deletion, and not-found reporting.
+5. `PlateStackOnChain.java` (`// Problem no. 5`) — Unbounded dynamic LIFO stack implementation using a linked chain with $O(1)$ operations (`push`, `pop`, `peek`, `isEmpty`).
+
+---
+
 ## 🛠️ Build and Compilation Instructions
 
 Each session's code can be compiled and executed independently using any standard Java Development Kit (JDK 8+):
 
 ```bash
 # 1. Switch to the desired session branch:
-git checkout feature/session_10
+git checkout feature/session_12
 
 # 2. Compile all problems in the session:
-javac src/main/java/data_structures/class_problems/*.java src/main/java/data_structures/assignment_problems/*.java
+javac src/main/java/linked_list/assignment_problems/*.java
 
 # 3. Run any specific program:
-java -cp src/main/java/data_structures/class_problems VowelAndConsonantCounter
-java -cp src/main/java/data_structures/assignment_problems ExamScoreBandCounter
+java -cp src/main/java/linked_list/assignment_problems BusRouteStops
+java -cp src/main/java/linked_list/assignment_problems PlateStackOnChain
 ```
 
 ---
